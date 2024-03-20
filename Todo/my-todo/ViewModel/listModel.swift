@@ -9,20 +9,19 @@ import Foundation
 
 class listModel: ObservableObject{
     @Published var items : [modelData] = []
-    init(){
+    /*  init(){
         getdata()
     }
     
     func getdata(){
         let newItem = [
-            modelData(title: "task 1", desc: "Hi from Task 1", status: false,date : Date()),
+          modelData(title: "task 1", desc: "Hi from Task 1", status: false,date : Date()),
             modelData(title: "task 2", desc: "hi from task 2", status: true,date: Date()),
             modelData(title: "task 3", desc: "Hello from task 3", status: false,date: Date())
             
         ]
         items.append(contentsOf: newItem)
-    }
-    
+    }*/
     func deleteItem (indexSet : IndexSet){
         items.remove(atOffsets: indexSet)
     }
